@@ -30,6 +30,7 @@ struct Color {
 }
 
 fn main() {
+    
     // let x: i8 = 10;
     // println!("{}", x);
     // let y: u8 = 10; //e
@@ -81,7 +82,51 @@ fn main() {
     vec1.push(x);
     vec1.reverse();
     println!("{:?}", vec1);
-    println!("{number:*<5}", number = 1);
+    println!("{number:*<5}", number = 11);
+ 
+
+    let mut vec: Vec<i32> = Vec::new();
+    vec.push(1);
+    vec.push(123);
+    let vec2 = vec![1, 2, 3];
+    println!("{:?}", vec2);
+
+    // if known size use with_capacity
+    let mut vect = Vec::<i32>::with_capacity(2);
+    println!(
+        "{:?}{:?}\n{:?}",
+        vect.capacity(),
+        vec.capacity(),
+        vec2.capacity()
+    );
+
+    let v: Vec<i32> = (0..5).collect();
+    println!("{:?}", v);
+
+    let sliced_v: &[i32] = &v; //pointing the varible where the slice starts the reference to the slice is called a fat pointer
+    println!("{:?}", sliced_v);
+    let sliced_v: &[i32] = &v[2..4]; //pointing the varible where the slice starts the reference to the slice is called a fat pointer
+    println!("{:?}", sliced_v);
+
+    //strings are stored as a vector of bytes and will always be utf-8 sequence, heap allocated, not null terminated
+
+    //ways to create strings:
+    let name = String::from("Tommy");
+    let language = "Rust".to_string();
+    let new_name = name.replace("Tommy", "timmy");
+    println!("{}", name);
+    println!("{}", language);
+    println!("{}", new_name);
+    // &str = "string slice" or 'stir'
+    let str1 = "hello"; // this is a string slice or &str doesnt allocate memory on the heap
+    println!("{}", str1);
+    //Converting &str to a string
+    let str2 = str1.to_string();
+    //Converting string to a &str
+
+    let rust = "\x52\x75\x73\x74";
+    println!("{rust}")
+
     let x = City {
         name: "abc",
         lat: 53.31564,
@@ -110,10 +155,4 @@ fn main() {
     for color in [a, b] {
         println!("{:?}", color);
     }
-
-    let mut vec: Vec<i32> = Vec::new();
-    vec.push(1);
-    vec.push(123);
-    let vec2 = vec![1, 2, 3];
-    println!("{:?}", vec2);
 }
