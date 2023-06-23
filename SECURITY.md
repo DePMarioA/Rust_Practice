@@ -1,6 +1,6 @@
 # Security Policy
 ## Reporting Security Concerns
-If you discover any security-related issues or vulnerabilities while using this repository, please report them to our security team at security@example.com. We appreciate your efforts in responsibly disclosing any concerns.
+If you discover any security-related issues or vulnerabilities while using this repository, please report them to our security team at current email. We appreciate your efforts in responsibly disclosing any concerns.
 
 ## Response and Disclosure
 Our team is committed to addressing security issues promptly and transparently. Once a report is received, we will acknowledge it within X business days and provide ongoing updates on the progress of its resolution. Once resolved, we will work with you to determine an appropriate disclosure timeline.
