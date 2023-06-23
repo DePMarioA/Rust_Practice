@@ -30,7 +30,6 @@ struct Color {
 }
 
 fn main() {
-    
     // let x: i8 = 10;
     // println!("{}", x);
     // let y: u8 = 10; //e
@@ -83,7 +82,6 @@ fn main() {
     vec1.reverse();
     println!("{:?}", vec1);
     println!("{number:*<5}", number = 11);
- 
 
     let mut vec: Vec<i32> = Vec::new();
     vec.push(1);
@@ -125,7 +123,7 @@ fn main() {
     //Converting string to a &str
 
     let rust = "\x52\x75\x73\x74";
-    println!("{rust}")
+    println!("{rust}");
 
     let x = City {
         name: "abc",
